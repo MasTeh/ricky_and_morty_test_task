@@ -7,7 +7,7 @@ final class DefaultDioClient extends DioClient {
 
   @override
   Future<Response> delete(String path, {Object? data, Map<String, dynamic>? queryParameters, Options? options}) async{
-    return await getBase(
+    return await deleteBase(
       path,
       queryParameters: queryParameters,
       options: options,
@@ -25,7 +25,7 @@ final class DefaultDioClient extends DioClient {
 
   @override
   Future<Response> post(String path, {Object? data, Map<String, dynamic>? queryParameters, Options? options}) async{
-    return await getBase(
+    return await postBase(
       path,
       queryParameters: queryParameters,
       options: options,
@@ -34,7 +34,7 @@ final class DefaultDioClient extends DioClient {
 
   @override
   Future<Response> put(String path, {Object? data, Map<String, dynamic>? queryParameters, Options? options}) async{
-    return await getBase(
+    return await putBase(
       path,
       queryParameters: queryParameters,
       options: options,
